@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' as foundation;
 
 void main() => runApp(MaterialApp(
+      title: 'I am rich',
       home: Home(),
     ));
 
@@ -14,17 +16,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey[900],
       ),
-      body: Center(
-        child: Image.asset(
-          'assets/images/rich_kid.jpg',
-          width: 300,
-          height: 500,
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        margin: EdgeInsets.all(30.0),
+        color: Colors.blueGrey[400],
+        child: Text('hello'),
       ),
-      bottomSheet: RaisedButton(
-        onPressed: () {},
-        child: Text('click me'),
-        color: Colors.lightBlue,
+      floatingActionButton: FloatingActionButton(
+        tooltip: 'Add', // used by assistive technologies
+        child: Icon(Icons.add),
+        backgroundColor: Colors.black,
+        onPressed: (null),
       ),
     );
   }
