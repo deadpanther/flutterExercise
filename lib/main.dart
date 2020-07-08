@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' as foundation;
+import 'package:helloflutter/loginScreen/AndroidMobile1.dart';
 
 void main() => runApp(MaterialApp(
       title: 'I am rich',
-      home: Home(),
+      home: AndroidMobile1(),
     ));
 
 class Home extends StatelessWidget {
