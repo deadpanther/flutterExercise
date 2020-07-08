@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
-import './usernameField.dart';
+import 'UsernameField.dart';
 import './password_Field.dart';
 import './Component11.dart';
 
-class AndroidMobile1 extends StatelessWidget {
+class AndroidMobile1 extends StatefulWidget {
   AndroidMobile1({
     Key key,
   }) : super(key: key);
+
+  @override
+  _AndroidMobile1State createState() => _AndroidMobile1State();
+}
+
+class _AndroidMobile1State extends State<AndroidMobile1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +33,7 @@ class AndroidMobile1 extends StatelessWidget {
             offset: Offset(95.5, 314.0),
             child:
                 // Adobe XD layer: 'usernameField' (component)
-                usernameField(),
+                UsernameField(),
           ),
           Transform.translate(
             offset: Offset(95.5, 392.0),
